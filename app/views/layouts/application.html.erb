@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render 'layouts/head' %>
+</head>
+<body>
+	<!-- Cabecera -->
+		<%= render 'layouts/header' %>
+	<!-- Fin Cabecera -->
+	<div class="container">
+		<%= render 'layouts/mensajes' %>
+		<%= yield %>
+		<%= render 'layouts/footer' %>
+	</div>
+
+</body>
+</html>

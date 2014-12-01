@@ -1,0 +1,24 @@
+<h1><%= @titulo %></h1>
+
+
+<div class="col-md-offset-3 col-md-6">
+	<%= form_tag('', role: 'form')   do %>
+		<div class="form-group">
+			<%= label 'nombre', "Nombre",  for: 'nombre' %>
+			<%= text_field_tag 'nombre', nil, class: 'form-control' %>
+		</div>
+		<div class="form-group">
+			<%= label 'email', "Email",  for: 'email' %>
+			<%= email_field_tag 'email', nil, class: 'form-control'  %>
+		</div>
+		<div class="form-group">
+			<%= label 'asunto', "Asunto", for: 'asunto' %>
+			<%= text_field_tag 'asunto', nil, class: 'form-control'  %>
+		</div>
+		<div class="form-group">
+			<%= label_tag'mensaje', "Mensaje", for: 'mensaje' %>
+			<%= text_area_tag 'mensaje', nil, :size=>'25x10', class: 'form-control'  %>		
+		</div>
+		<%= submit_tag 'Enviar', class: 'btn btn-default' %>
+	<% end %>
+</div>

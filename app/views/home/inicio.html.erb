@@ -1,0 +1,26 @@
+<h1><%= @titulo %></h1>
+<div class="row">
+	<div class="col-md-10 col-md-offset-2">
+		<%= image_tag 'banner.jpg', size: '700x150' %>
+	</div>
+</div>
+<div class="row" id='servicios'>
+    <div class="col-lg-4">
+      <%= image_tag 'rails.jpeg', size: '140x140', alt: 'Rails' %>
+      <h2>Rails</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque possimus, provident hic suscipit quae doloribus nobis libero cupiditate magnam officiis, laborum. Totam iure laudantium excepturi obcaecati, numquam eligendi quisquam doloribus.</p>
+      <p><%= link_ver_detalles 'http://rubyonrails.org/' %></p>
+    </div>
+    <div class="col-lg-4">
+       <%= image_tag 'heroku.jpeg', size: '140x140', alt: 'Heroku' %>
+      <h2>Heroku</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam deserunt eveniet iusto voluptatem repellendus molestiae, vitae earum fugit harum pariatur illo, quibusdam perferendis possimus cupiditate sed ducimus, animi! Nihil, veritatis!</p>
+      <p><%= link_ver_detalles 'https://www.heroku.com/' %></p>
+    </div>
+    <div class="col-lg-4">
+       <%= image_tag 'github.jpeg', size: '140x140', alt: 'Github' %>
+      <h2>Github</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et in ratione eaque ut repellendus laudantium dicta dolore perspiciatis quo neque quidem quod cupiditate praesentium, cumque, laboriosam quasi tenetur ab rerum.</p>
+      <p><%=  link_ver_detalles 'http://www.github.com'%></p>
+    </div>
+</div>
